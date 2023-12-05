@@ -54,6 +54,7 @@ public class HoaDonDAO {
         return db.update("Bills",values,"id=?",new String[]{String.valueOf(hoaDon.getId())});
     }
 
+    
     public List<HoaDon> getAll(){
         String sql = "SELECT * FROM Bills ORDER BY bill_date DESC";
         return getData(sql);
